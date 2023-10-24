@@ -1,0 +1,105 @@
+<BozoEdit 1.0 User Manual>
+
+"Feature"
+-command based editing
+-cannot make a new textfile
+-using pointer and index to specify the line to edit
+-will ignore unnecessary command argument
+-no undo/redo
+-mildly useful non-essential feature
+-minimally usable experience
+-minimally tested
+-somewhat vaguely written manual
+-just a really bad text editor in general
+
+==Available command==
+
+1. unload
+
+unload the currently loaded text
+
+Usage: unload
+
+2. save
+
+save the loaded text content to the original file
+
+Usage: save
+
+3. hop
+
+move the pointer to the specified line
+
+Usage: hop (line index)
+
+EX: hop 7 // will move the pointer position to line 7 if it exist
+
+4. write
+
+overwrite the line currently pointed
+
+Usage: write (text to write)
+
+EX: write this is a test // will write "this is a test" to the currently pointed line
+
+5. delete
+
+delete the line currently pointed
+
+Usage: delete
+
+6. clear
+
+clear the currently pointed line
+
+Usage: clear
+
+7. concat
+
+append a text to the end of the line currently pointed
+
+Usage: concat (text to append)
+
+EX: append this is so bad // will append "this is so bad" to the back of currently pointed line
+
+8. add
+
+add an empty line after the specified line
+
+Usage: add (line index)
+
+EX: add 0 // will add an empty line after line 0 (add an empty line at line 1) and move the previous line 1 to line 2
+
+9. addlast
+
+add an empty line at the end of the text
+
+Usage: addlast
+
+10. copy
+
+copy and overwrite the content of currently pointed line to the specified line
+
+Usage: copy (line index)
+
+EX: copy 1 // will copy and overwrite the content of the currently pointed line to line 1
+
+11. cut
+
+copy and overwrite the content of currently pointed line to the specified line, then clear the pointed line
+
+Usage: cut (line index)
+
+EX: cut 1 // will copy and overwrite the content of the currently pointed line to line 1, then clear the pointed line
+
+12. peek
+
+print/view the currently pointed line
+
+Usage: peek
+
+13. print
+
+print/view the whole loaded text
+
+Usage: print
